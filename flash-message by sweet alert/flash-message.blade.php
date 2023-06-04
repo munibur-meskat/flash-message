@@ -36,12 +36,12 @@
   </script>
 @endif
 
-@if (Session::has('danger'))
+@if (Session::has('warning'))
   <script>
     Swal.fire({
       position: 'top-end',
-      icon: 'danger',
-      title: "{{ Session::get('danger') }}",
+      icon: 'warning',
+      title: "{{ Session::get('warning') }}",
       showConfirmButton: false,
       timer: 5000
     })
